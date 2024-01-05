@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(142, 174, 29);
+            overflow: hidden;
+            padding: 1rem;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(9,1fr);
+            grid-template-columns: repeat(2,1fr);
+            gap: .5rem;
+        }
+        .items{
+            /* height: 100px;
+            width: 100px; */
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(169, 183, 20);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+        }
+        @media(min-width:768px){
+            .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(200, 243, 32);
+            overflow: hidden;
+            padding: 1rem;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(6,1fr);
+            gap: .5rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items box1">Box 1</div>
+        <div class="items box2">Box 2</div>
+        <div class="items box3">Box 3</div>
+        <div class="items box4">Box 4</div>
+        <div class="items box5">Box 5</div>
+        <div class="items box6">Box 6</div>
+        <div class="items box7">Box 7</div>
+        <div class="items box8">Box 8</div>
+        <div class="items box9">Box 9</div>
+        <div class="items box10">Box 10</div>
+        <div class="items box11">Box 11</div>
+        <div class="items box12">Box 12</div>
+        <div class="items box13">Box 13</div>
+        <div class="items box14">Box 14</div>
+        <div class="items box15">Box 15</div>
+        <div class="items box16">Box 16</div>
+        <div class="items box17">Box 17</div>
+        <div class="items box18">Box 18</div>
+    </div>
+</body>
+</html>
