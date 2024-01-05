@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #DC851F;
+            padding: .5rem;
+            border: 2px beige solid;
+            display: grid;
+            grid-template: repeat(9,1fr)/repeat(1,1fr);
+            gap: .5rem;
+        }
+        .items{
+            border: 1px solid beige;
+            background-color: #FFA737;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media(min-width:768px){
+
+            .container{
+                display: grid;
+            grid-template: repeat(3,1fr)/repeat(5,1fr);
+            gap: .5rem;
+            }
+            .box8{
+            grid-column: 3/6;
+            grid-row: 2;
+        }
+        .box9{
+            grid-column: 1/6;
+            grid-row: 3;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items box1">Box 1</div>
+        <div class="items box2">Box 2</div>
+        <div class="items box3">Box 3</div>
+        <div class="items box4">Box 4</div>
+        <div class="items box5">Box 5</div>
+        <div class="items box6">Box 6</div>
+        <div class="items box7">Box 7</div>
+        <div class="items box8">Box 8</div>
+        <div class="items box9">Box 9</div>
+    </div>
+</body>
+</html>
